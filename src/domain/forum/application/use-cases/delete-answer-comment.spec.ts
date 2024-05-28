@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest'
 import { InMemoryAnswerCommentsRepository } from '../../../../../test/repositories/in-memory-answer-comments-repository'
 import { DeleteAnswerCommentUseCase } from './delete-answer-comment'
 import { UniqueEntityId } from '../../../../core/entities/unique-entity-id'
-import { makeAnswerComment } from '../../../../../test/factories/make-question-answer'
+import { makeAnswerComment } from '../../../../../test/factories/make-answer-comments'
 import { NotAllowedError } from '../../../../core/Errors/error/not-allowed-error'
 
 let inMemoryAnswerCommentsRepository: InMemoryAnswerCommentsRepository
