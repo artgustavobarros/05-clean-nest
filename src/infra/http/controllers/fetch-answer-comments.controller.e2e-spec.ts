@@ -54,12 +54,12 @@ describe('Fetch Answer Comments (e2e)', () => {
     await Promise.all([
       answerCommentFactory.makePrismaAnswerComment({
         authorId: user.id,
-        answerId: question.id,
+        answerId: answer.id,
         content: 'Comment 01',
       }),
       answerCommentFactory.makePrismaAnswerComment({
         authorId: user.id,
-        answerId: question.id,
+        answerId: answer.id,
         content: 'Comment 02',
       }),
     ])
